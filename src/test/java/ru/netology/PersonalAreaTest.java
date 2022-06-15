@@ -60,7 +60,7 @@ public class PersonalAreaTest {
         $("[data-test-id=password] .input__control").setValue(DataGenerator.invalidPasswordUser());
         $("[data-test-id=action-login] .button__text").click();
         $("[data-test-id=error-notification] .notification__content")
-                .should(exactText("Ошибка! Неверно указан логин или пароль"), Duration.ofSeconds(15));
+                .should(exactText("Ошибка! Неверно указан логин или парол"), Duration.ofSeconds(15));
     }
 
 }
